@@ -176,7 +176,7 @@ A RESTful API for managing a library system, built with Node.js, Express.js, Seq
 
 #### a. Get All Borrow Records
 
-- **Endpoint:** `GET /api/borrowing`
+- **Endpoint:** `GET /api/borrow`
 - **Response:**
   ```json
   [
