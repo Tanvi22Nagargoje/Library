@@ -16,5 +16,7 @@ const User = sequelize.define('User', {
     allowNull: false
   }
 });
+// Define the relationship: One user can have many borrowings
+User.hasMany(Borrowing, { foreignKey: 'user_id' });
 
 module.exports = User;
