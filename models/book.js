@@ -23,5 +23,6 @@ const Book = sequelize.define('Book', {
     defaultValue: true
   }
 });
-
+// Define the relationship: One book can have many borrowings
+Book.hasMany(Borrowing, { foreignKey: 'book_id' });
 module.exports = Book;
